@@ -44,7 +44,7 @@ class TicTacToe {
 
 
         // TODO: Set `this.startPrompt` equal to the `#start-prompt` element
-        this.startPrompt = document.querySelector('#start-promt');
+        this.startPrompt = document.querySelector('#start-prompt');
 
         // TODO: Set `this.movePrompt` equal to the `#move-prompt` element
         this.movePrompt = document.querySelector('#move-prompt');
@@ -182,7 +182,7 @@ class TicTacToe {
 
         // TODO: Claim this spot in the `this.gameState` array for the player.
         if (!this.gameState[tile_x][tile_y]) {
-            this.gameState[tile_x, tile_y] = this.currentPlayer.token;
+            this.gameState[tile_x][tile_y] = this.currentPlayer.token;
 
             // TODO: Set the class on the `event.target` to show the player's token. The class
             // should be: `tile played fas fa-${this.currentPlayer.token}`.
