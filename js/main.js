@@ -159,7 +159,7 @@ class TicTacToe {
             this.gameStatus = 'draw';
 
             // TODO: Create a new event called `drawEvent` that dispatches the signal "draw".
-            let draw = new Event('draw');
+            let drawEvent = new Event('draw');
 
             // TODO: Dispatch the `drawEvent` event.
             document.dispatchEvent(drawEvent);
